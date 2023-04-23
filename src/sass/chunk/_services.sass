@@ -14,6 +14,12 @@
   &__title
     margin-bottom: 5px
 
+  &__descr
+    &--orange
+      font-family: "Gilroy-Bold", sans-serif
+      font-weight: 700
+      color: $macaroni-cheese
+
   &__text
     margin: 0
     margin-bottom: 30px
@@ -30,7 +36,7 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-around
-    align-items: flex-start
+    align-items: center
     width: 100%
     gap: 60px 10px
     @media screen and ( max-width: 768px )
@@ -42,9 +48,10 @@
   &__card
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: flex-start
     padding: 20px
     max-width: 320px
+    min-height: 440px
     background-color: $alabaster
     box-shadow: 0px 2px 24px 4px rgba(0, 0, 0, 0.15)
     border-radius: 10px
@@ -56,60 +63,41 @@
         display: flex
     @media screen and ( max-width: 576px )
       max-width: 250px
+      min-height: 340px
 
   &__img
     margin-bottom: 20px
     width: 100%
-    min-height: 280px
+    height: auto
     border-radius: 10px
+
+  &__heading
+    margin: 0
+    font-family: "Gilroy-Bold", sans-serif
+    font-weight: 700
+    font-size: 23px
+    line-height: 28px
     @media screen and ( max-width: 576px )
-      min-height: 210px
+      font-size: 18px
+      line-height: 23px
 
-  &__list
+  &__price
     margin-bottom: auto
-    padding-bottom: 20px
-
-  &__item
-    margin-bottom: 10px
     font-family: "Gilroy-Regular", sans-serif
     font-weight: 400
     font-size: 23px
     line-height: 28px
-    &:last-child
-      margin-bottom: 0
     @media screen and ( max-width: 576px )
       font-size: 20px
       line-height: 25px
-    &--hidden
-      display: none
-    &.active
-      display: inline-block
-      &:first-child
-        padding-top: 10px
 
   &__button
-    padding: 25px 97px
+    padding: 25px 107px
     @media screen and ( max-width: 576px )
       margin: 0 auto
       padding: 15px 40px
       font-size: 13px
       line-height: 19px
-    &-more
-      padding-top: 20px
-      font-family: "Gilroy-Regular", sans-serif
-      font-weight: 400
-      font-size: 20px
-      line-height: 24px
-      position: relative
-      &::after
-        position: absolute
-        content: ""
-        width: 100%
-        border-top: 1px solid $black
-        top: 100%
-        left: 0
-      &.none
-        display: none
 
   &__still
     display: none
