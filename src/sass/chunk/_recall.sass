@@ -1,0 +1,93 @@
+.recall
+  padding-top: 50px
+  padding-bottom: 90px
+  @media screen and ( max-width: 576px )
+    padding-top: 25px
+    padding-bottom: 45px
+
+  &__container
+    max-width: 880px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__title
+    margin-bottom: 30px
+    @media screen and ( max-width: 576px )
+      margin-bottom: 15px
+
+  &__descr
+    &--orange
+      font-family: "Gilroy-Bold", sans-serif
+      font-weight: 700
+      color: $macaroni-cheese
+
+  &__inner-swiper
+    max-width: 600px
+    position: relative
+    @media screen and ( max-width: 768px )
+      max-width: 400px
+    @media screen and ( max-width: 576px )
+      max-width: 300px
+
+  &__slide
+    display: flex
+    justify-content: center
+
+  &__img
+    width: 300px
+    height: 500px
+    &--wide
+      width: 400px
+    @media screen and ( max-width: 768px )
+      width: 200px
+      height: 400px
+      &--wide
+        width: 300px
+    @media screen and ( max-width: 576px )
+      width: 150px
+      height: 300px
+      &--wide
+        width: 200px
+
+.recall-swiper
+  width: 600px
+  height: 500px
+  border-radius: 50px
+  @media screen and ( max-width: 768px )
+    width: 400px
+    height: 400px
+  @media screen and ( max-width: 576px )
+    border-radius: 10px
+    width: 300px
+    height: 300px
+
+.swiper-button-prev
+  left: -10%
+  &::after
+    position: absolute
+    content: ""
+    width: 28px
+    height: 72px
+    background-image: url(../img/svg/slider-arrow-left.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+  @media screen and ( max-width: 576px )
+    display: none
+
+.swiper-button-next
+  right: -10%
+  &::after
+    position: absolute
+    content: ""
+    width: 28px
+    height: 72px
+    background-image: url(../img/svg/slider-arrow-right.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+  @media screen and ( max-width: 576px )
+    display: none

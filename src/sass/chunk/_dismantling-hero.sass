@@ -1,0 +1,114 @@
+.dismantling-hero
+  position: relative
+  padding-top: 190px
+  padding-bottom: 145px
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/dismantling-hero/hero-background.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+  &::after
+    position: absolute
+    content: ""
+    background-image: url(../img/dismantling-hero/hero-decoration-bottom.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 100%
+    height: 67px
+    bottom: 0
+    left: 0
+  @media screen and ( max-width: 768px )
+    padding-top: 150px
+    padding-bottom: 115px
+  @media screen and ( max-width: 576px )
+    padding-top: 120px
+    padding-bottom: 105px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: relative
+    z-index: 2
+    @media screen and ( max-width: 576px )
+      align-items: center
+
+  &__title
+    margin: 0
+    margin-bottom: 65px
+    max-width: 980px
+    text-align: inherit
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 100px
+      border-top: 3px solid $macaroni-cheese
+      bottom: -45px
+      left: 0
+    @media screen and ( max-width: 768px )
+      margin-bottom: 45px
+      &::after
+        bottom: -30px
+    @media screen and ( max-width: 576px )
+      text-align: center
+      margin-bottom: 25px
+      &::after
+        bottom: -15px
+        left: 50%
+        transform: translateX(-50%)
+
+  &__text
+    margin: 0
+    margin-bottom: 40px
+    font-family: "Gilroy-Regular", sans-serif
+    font-weight: 400
+    font-size: 25px
+    line-height: 30px
+    @media screen and ( max-width: 768px )
+      margin-bottom: 20px
+    @media screen and ( max-width: 576px )
+      text-align: center
+      font-size: 19px
+      line-height: 23px
+
+  &__button
+    padding: 30px 60px
+    font-family: "Gilroy-Bold", sans-serif
+    font-weight: 700
+    color: $raw-umber
+    &::before
+      position: absolute
+      content: ""
+      width: 140px
+      height: 140px
+      background-image: url(../img/dismantling-hero/hero-decoration.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      top: -33px
+      right: -79px
+    &:hover
+      &::before
+        top: -38px
+    @media screen and ( max-width: 768px )
+      padding: 20px 40px
+      &::before
+        width: 110px
+        height: 110px
+        top: -26px
+        right: -61px
+      &:hover
+        &::before
+          top: -31px
+    @media screen and ( max-width: 576px )
+      padding: 10px 20px
+      &::before
+        width: 80px
+        height: 80px
+        top: -23px
+        right: -46px
+      &:hover
+        &::before
+          top: -28px

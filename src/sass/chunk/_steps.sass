@@ -1,0 +1,126 @@
+.steps
+  padding-top: 75px
+  padding-bottom: 115px
+  @media screen and ( max-width: 576px )
+    padding-top: 35px
+    padding-bottom: 65px
+
+  &__container
+    max-width: 755px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 138px
+      height: 326px
+      bottom: 31px
+      right: -35px
+      background-image: url(../img/steps/steps-decoration.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+    @media screen and ( max-width: 1200px )
+      &::after
+        display: none
+
+  &__title
+    margin-bottom: 65px
+    text-transform: uppercase
+    @media screen and ( max-width: 768px )
+      margin-bottom: 45px
+    @media screen and ( max-width: 576px )
+      margin-bottom: 35px
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 70px
+    max-width: 725px
+    width: 100%
+    @media screen and ( max-width: 992px )
+      max-width: 675px
+    @media screen and ( max-width: 768px )
+      max-width: 475px
+    @media screen and ( max-width: 576px )
+      align-items: center
+      margin-bottom: 30px
+      max-width: 275px
+
+  &__card
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 50px
+    max-width: 490px
+    &:last-child
+      margin-bottom: 0
+    &--long
+      max-width: 100%
+    @media screen and ( max-width: 576px )
+      flex-direction: column
+      justify-content: center
+      margin-bottom: 30px
+
+  &__execrpt
+    font-size: 30px
+    line-height: 37px
+    margin-right: 50px
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 74px
+      height: 74px
+      top: -19px
+      left: -30px
+      background-color: $cherokee
+      border-radius: 50%
+      z-index: -1
+    @media screen and ( max-width: 576px )
+      margin-right: 0
+      margin-bottom: 15px
+      &::after
+        width: 54px
+        height: 54px
+        top: -9px
+        left: -19px
+      &--left
+        &::after
+          left: -20px
+
+  &__card-content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    @media screen and ( max-width: 576px )
+      align-items: center
+
+  &__heading
+    margin: 0
+    margin-bottom: 10px
+    @media screen and ( max-width: 576px )
+      margin-bottom: 5px
+      font-size: 20px
+      line-height: 25px
+
+  &__text
+    margin: 0
+    font-family: "Gilroy-Regular", sans-serif
+    font-weight: 400
+    font-size: 19px
+    line-height: 23px
+    @media screen and ( max-width: 576px )
+      text-align: center
+      font-size: 17px
+      line-height: 21px
+
+  &__button
+    padding: 25px 65px
+    @media screen and ( max-width: 576px )
+      padding: 15px 35px

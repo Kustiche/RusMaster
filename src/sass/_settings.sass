@@ -1,0 +1,40 @@
+html
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+body
+  margin: 0
+  font-family: "Gilroy-Bold", sans-serif
+  font-weight: 700
+  font-size: 23px
+  line-height: 28px
+  color: $bronze-olive
+
+  &.lock
+    overflow: hidden
+
+.container
+  margin: 0 auto
+  max-width: 1230px
+  padding: 0 15px
+
+.btn-reset
+  padding: 0
+  background-color: transparent
+  border: none
+  cursor: pointer
+  color: inherit
+
+.link-reset
+  text-decoration: none
+  color: inherit
+
+.list-reset
+  margin: 0
+  padding: 0
+  list-style: none

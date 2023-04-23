@@ -1,0 +1,42 @@
+.thanks-hero
+  position: relative
+  height: 100vh
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero/hero-background.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+  z-index: 2
+  &::after
+    position: absolute
+    content: ""
+    background-image: url(../img/hero/hero-decoration-bottom.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 100%
+    height: 67px
+    bottom: 0
+    left: 0
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100vh
+
+  &__title
+    margin-bottom: 10px
+
+  &__descr
+    margin-bottom: 15px
+    text-align: center
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+
+  &__link
+    padding: 20px 50px
+    font-size: 16px
+    @media screen and ( max-width: 576px )
+      padding: 20px 30px

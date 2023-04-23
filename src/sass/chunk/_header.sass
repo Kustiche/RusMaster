@@ -1,0 +1,113 @@
+.header
+  padding-top: 30px
+  position: absolute
+  left: 0
+  right: 0
+  z-index: 10
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 20px
+    @media screen and ( max-width: 768px )
+      gap: 50px
+    @media screen and ( max-width: 576px )
+      gap: 20px
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 790px
+    width: 100%
+    @media screen and ( max-width: 992px )
+      max-width: 630px
+    @media screen and ( max-width: 768px )
+      max-width: 480px
+    @media screen and ( max-width: 576px )
+      flex-direction: column
+      max-width: 120px
+
+  &__inner-social
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    max-width: 280px
+    width: 100%
+    @media screen and ( max-width: 992px )
+      flex-direction: column
+      max-width: 140px
+    @media screen and ( max-width: 576px )
+      max-width: 100px
+
+  &__text
+    margin-right: 10px
+    max-width: 136px
+    font-family: "Gilroy-Medium", sans-serif
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+    text-align: center
+    @media screen and ( max-width: 992px )
+      margin-right: 0
+    @media screen and ( max-width: 576px )
+      display: none
+
+  &__inner-social-link
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 100px
+    width: 100%
+
+  &__social-link
+    line-height: 0
+    transition: transform .4s
+    &:hover
+      transform: scale(0.9)
+
+  &__social-icon
+    width: 25px
+    height: 25px
+    &--youtube
+      width: 33px
+      height: 33px
+
+  &__inner-relations
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 390px
+    width: 100%
+    @media screen and ( max-width: 992px )
+      max-width: 340px
+    @media screen and ( max-width: 768px )
+      max-width: 145px
+    @media screen and ( max-width: 576px )
+      max-width: 117px
+
+  &__button
+    margin-bottom: 3px
+    font-family: "Gilroy-Medium", sans-serif
+    font-weight: 500
+    &::after
+      top: 3px
+    &:hover
+      top: 3px
+    @media screen and ( max-width: 768px )
+      display: none
+
+.logo
+  max-width: 305px
+  height: 100px
+  @media screen and ( max-width: 768px )
+    max-width: 205px
+    height: 70px
+  @media screen and ( max-width: 576px )
+    // max-width: 155px
+    height: 60px
+
+  &__img
+    width: 100%
+    height: 100%
